@@ -14,6 +14,10 @@ L'objectif n'est pas la finance mais l'ingénierie : environnement isolé (`venv
 
 Les données de `data/sample_prices.csv` sont **fictives** (marche aléatoire, 60 jours ouvrés).
 
+![Prix, rendements journaliers et volatilité glissante sur 20 jours](docs/plot.png)
+
+*Résultat de `python src/analysis.py` (fenêtre de 20 jours). Copie versionnée de `outputs/plot.png`, qui est ignoré par Git.*
+
 ## Setup
 
 Prérequis : Python 3.10+ et Git.
@@ -57,6 +61,8 @@ Le script peut être lancé depuis n'importe quel répertoire : les chemins sont
 ├── tests/
 │   └── test_analysis.py      # tests pytest (cas nominaux et cas limites)
 ├── outputs/                  # graphiques générés (ignorés par Git)
+├── docs/
+│   └── plot.png              # copie du graphique affichée dans ce README
 ├── requirements.txt          # dépendances pinnées (pip freeze)
 ├── .gitignore
 └── README.md
